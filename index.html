@@ -116,6 +116,7 @@
 
         // Load the image model and setup the webcam
         async function init() {
+            document.getElementById("start-btn").remove();
             const modelURL = URL + "model.json";
             const metadataURL = URL + "metadata.json";
 
@@ -135,7 +136,6 @@
 
             // append elements to the DOM
             document.getElementById("webcam-container").appendChild(webcam.canvas);
-            document.getElementById("start-btn").remove();
             document.getElementById("main-container").style.display = null;
         }
 
